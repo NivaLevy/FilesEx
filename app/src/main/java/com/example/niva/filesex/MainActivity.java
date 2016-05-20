@@ -53,4 +53,10 @@ public class MainActivity extends AppCompatActivity {
             lyrics = "ERROR";
         }
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mediaPlayer.stop();
+    }
 }
