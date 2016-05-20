@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             inputStream.close();
             lblLyrics.setText(lyrics);
         }catch (IOException e){
-            lyrics = "ERROR";
+            lyrics = "";
         }
     }
 
