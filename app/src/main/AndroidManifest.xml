@@ -4,10 +4,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/junglebook"
+        android:icon="@drawable/mermaid"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DisneySong" />
     </application>
 
 </manifest>
