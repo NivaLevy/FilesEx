@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(v.equals(cmdJungleBook))
             intent.putExtra("type", JUNGLE_BOOK);
         String nameOfSong = b.getText().toString();
-        String s = operations.readFromFile(getApplicationContext());
-        operations.writeToFile( s + " "+nameOfSong,getApplicationContext());
+        String string = operations.readFromFile(getApplicationContext());
+        operations.writeToFile( string + " "+nameOfSong,getApplicationContext());
         Log.i(TAG, operations.readFromFile(getApplicationContext()));
         startActivity(intent);
     }
